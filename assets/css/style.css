@@ -23,7 +23,7 @@ footer {
 #footer_content {
     background-color: var(--color-neutral-10);
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
 }
 
@@ -38,6 +38,9 @@ footer {
 }
 
 #footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
     color: var(--color-neutral-40);
