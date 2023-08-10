@@ -27,6 +27,11 @@ footer {
     padding: 3rem 3.5rem;
 }
 
+.flex-container {
+    display: flex
+    
+}
+
 #footer_contacts h1 {
     margin-bottom: 0.75rem;
 }
