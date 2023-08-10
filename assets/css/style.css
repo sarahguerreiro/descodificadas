@@ -31,13 +31,13 @@ footer {
     margin-bottom: 0.75rem;
 }
 
-#footer_social_media {
+.footer_social_media {
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
-#footer_social_media .footer_link{
+.footer_social_media .footer_link{
     display: flex;
     align-items: center;
     justify-content: center;
