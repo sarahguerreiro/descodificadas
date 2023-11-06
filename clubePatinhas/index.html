@@ -12,6 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
       rel="stylesheet"
     />
@@ -21,36 +27,25 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="outroHome.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Feira-Patinhas clube</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
+        <a href="">
+          <img
+            src="/clubePatinhas/assets/logoPatinhas.png"
+            alt=""
+            width="50"
+            height="50"
+          />
+        </a>
         <ul class="container">
-          <li>
-            <a href="">
-              <img
-                src="/clubePatinhas/assets/logoPatinhas.png"
-                alt=""
-                width="50"
-                height="50"
-              />
-              Feira de Adoção
-            </a>
-          </li>
-          <li>
-            <a href="">home</a>
-          </li>
-          <li>
-            <a href="">Programação</a>
-          </li>
-          <li>
-            <a href="">Formulário</a>
-          </li>
-          <li>
-            <a href="">Local</a>
-          </li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="prog.html">Programação</a></li>
+          <li><a href="">Formulário</a></li>
+          <li><a href="">Local</a></li>
         </ul>
       </nav>
       <div>
@@ -59,6 +54,7 @@
         <p>De terça a domingo, das 9h as 18h</p>
       </div>
     </header>
+
     <main class="container-main">
       <div class="info">
         <h2 class="fonte-fina">
@@ -114,8 +110,10 @@
       <div class="destaque">
         <h2 class="fonte-fina">
           A feira de adoção especial acontece a cada 15 dias no abrigo, com o
-          objetivo de estimular a adoção de animais mais velhos e/ou com
-          necessidades especiais. Não fique de fora da nossa próxima edição!
+          objetivo de estimular a adoção de animais <span class="mark">
+            mais velhos e/ou com
+            necessidades especiais
+          </span>. Não fique de fora da nossa próxima edição!
         </h2>
         <figure>
           <img
@@ -136,31 +134,48 @@
         <h2>Local</h2>
         <div class="endereco">
           <p class="endereco__1">
-            Abrigo - Clube Patinhas<br>
-            Rua Honório Serpa, 259 - Jardim Vergueiro,
-            SP
+            Abrigo - Clube Patinhas<br />
+            Rua Honório Serpa, 259 - Jardim Vergueiro, SP
           </p>
           <p class="endereco__2">
-          Nossa feira acontece no Pet Place do abrigo, conta com estrutura de
-          estacionamento e barracas com vendas de itens para seu novo amigo e
-          vai ter bolo, vem! 🥧
+            Nossa feira acontece no Pet Place do abrigo, conta com estrutura de
+            estacionamento e barracas com vendas de itens para seu novo amigo e
+            vai ter bolo, vem! 🥧
           </p>
         </div>
 
         <div class="mapa">
-            <div class="mapa__1">
-                <figure>
-                    <img src="assets/abrigo.jpg" alt="">
-                </figure>
-                <figure>
-                    <img src="assets/abrigo2.jpg" alt="">
-                </figure>
-            </div>
-            <div class="mapa__2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3655.230134394622!2d-46.608512!3d-23.631928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b6bcc5252c1%3A0x1a862d92f20af4b5!2sR.%20Hon%C3%B3rio%20Serpa%2C%20259%20-%20Jardim%20Vergueiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004174-090!5e0!3m2!1spt-BR!2sbr!4v1699138768585!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+          <div class="mapa__1">
+            <figure>
+              <img src="assets/abrigo.jpg" alt="" />
+            </figure>
+            <figure>
+              <img src="assets/abrigo2.jpg" alt="" />
+            </figure>
+          </div>
+          <div class="mapa__2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3655.230134394622!2d-46.608512!3d-23.631928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b6bcc5252c1%3A0x1a862d92f20af4b5!2sR.%20Hon%C3%B3rio%20Serpa%2C%20259%20-%20Jardim%20Vergueiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004174-090!5e0!3m2!1spt-BR!2sbr!4v1699138768585!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br>
+      <div class="info">
+        <h2 class="fonte-fina">Esperamos contar com sua presença!</h2>
+        <button type="button" class="button">Confirmar presença</button>
+      </div>
     </main>
+    <footer>
+      <p>Feito com ❤️ by Sarah Guerreiro</p>
+    </footer>
   </body>
 </html>
