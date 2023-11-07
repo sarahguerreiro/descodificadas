@@ -6,28 +6,24 @@
 }
 
 header {
-    height: 700px;
+    height: 550px;
     width: 100%;    
     background-image: url(assets/colagem-de-animal-de-estimacao-.jpg);
+    box-shadow: black;
+    opacity: 0.9;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: multiply;
 }
 
 header h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 100px;
+    font-size: 80px;
     color: azure;
     padding: 300px 0 0 0;
     text-align: center;
     text-shadow: 1px 7px 15px rgba(0,0,0,0.98);
 }
-
-header p {
-    font-family: 'Gabarito', sans-serif;
-    font-size: 25px;
-    color: azure;
-    padding: 10px 50px;
-}
-
 
 .navbar {
     display: flex;
@@ -36,6 +32,7 @@ header p {
     backdrop-filter: blur(7px);
     height: 80px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.214);
+    text-shadow: 1px 7px 15px rgba(0,0,0,0.98);
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
@@ -65,7 +62,7 @@ header p {
 }
 
 .container li:hover {
-    background: #e47e10;
+
     border-bottom: 6px solid #f0d44b;   
     transition: 400ms;
 }
@@ -101,20 +98,6 @@ header p {
     margin-bottom: -20px;
 }
 
-.button {
-    color: azure;
-    background-color: #f6c13c;
-    border: 1px solid #c7adf4;
-    font-size: 26px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 15px;
-    margin: 30px;
-    border-radius: 20px;
-}
-.button:hover {
-    background-color: #e47e10;
-}
-
 .carrossel {
     display: flex;
     font-display: row;
@@ -144,81 +127,6 @@ header p {
 
 .carrossel .carrossel__item > figure > img {
     width: 100%;
-    border-radius: 20px;
-}
-
-
-.destaque > figure > img {
-    width: 50%;
-    border-radius: 20px;
-    margin: 20px;
-}
-
-
-.destaque > figure > figcaption {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 15px;
-    padding: 15px;
-    width: 50%;
-    margin: 20px auto;
-}
-
-.local h2{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    padding: 25px;
-}
-
-.endereco {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.endereco .endereco__1 {
-    flex: 1;
-    text-align: left;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 25px;
-    color: #373636d3;
-}
-
-.endereco .endereco__2 {
-    flex: 2;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 25px;
-    color: #373636d3;
-}
-
-
-.mapa {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.mapa .mapa__1 {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    
-}
-
-.mapa .mapa__2 {
-    flex: 2;
-    margin: 30px;
-}
-
-.mapa .mapa__1 > figure > img {
-    width: 100%;
-    border-radius: 20px;
-    margin: 5px;
 }
 
 footer {
@@ -236,12 +144,32 @@ footer {
 .demo {
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
     background-color: #fff;
     text-align: left;
-    font-size: 15px;
+    font-size: 23px;
     padding: 75px;
 }
 .demo > tbody > tr > td {
+    font-family: 'Roboto', sans-serif;
     padding: 25px;
+}
+
+.data-evento {
+    height: 250px;
+    margin: 28px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.data-evento h5{
+    font-size: 40px;
+    padding: 25px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+.data-evento p{
+    font-size: 50px;
+    padding: 25px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
 }
