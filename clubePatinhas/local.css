@@ -95,18 +95,24 @@ header h2 {
     padding: 25px;
 }
 
-.endereco {
+.local__historia {
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
 
-.endereco > div > figure > img {
+.local__historia > div > figure > img {
     height: 250px;
-    padding: 25px;
+    padding: 5px;
+    margin: 10px;
 }
 
-.endereco .endereco__1 {
+.local__historia > div > figure > figcaption {
+    background-color: rgba(144, 90, 236, 0.533);
+    padding: 5px;
+}
+
+.local__historia .paragrafo__1 {
     flex: 1;
     text-align: left;
     font-size: 15px;
@@ -115,7 +121,7 @@ header h2 {
     color: #373636d3;
 }
 
-.endereco .endereco__2 {
+.local__historia .paragrafo__2 {
     flex: 2;
     font-family: 'Roboto', sans-serif;
     text-align: left;
@@ -125,20 +131,16 @@ header h2 {
     color: #373636d3;
 }
 
-
 .mapa {
     display: flex;
     flex-direction: row;
 
 }
 
-
-
 .mapa .mapa__2 {
     flex: 2;
     margin: 30px;
 }
-
 
 footer {
     font-family: 'Lexend', sans-serif;
