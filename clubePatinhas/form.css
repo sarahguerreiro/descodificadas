@@ -6,7 +6,7 @@
 }
 
 header {
-    height: 700px;
+    height: 600px;
     width: 100%;    
     background-image: url(assets/mulher-beija-dogs.jpg);
     background-size: cover;
@@ -17,6 +17,9 @@ header h2 {
     font-size: 80px;
     color: azure;
     padding: 80px 50px 40px 30px;
+    display: flex;
+    justify-content: center;
+    margin: 200px auto;
 }
 
 header p {
