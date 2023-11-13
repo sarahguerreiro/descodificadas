@@ -193,27 +193,15 @@ header p {
 }
 
 
-.mapa {
+.video {
     display: flex;
     flex-direction: row;
 
 }
 
-.mapa .mapa__1 {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    
-}
-
-.mapa .mapa__2 {
+.video .video__2 {
     flex: 2;
     margin: 30px;
-}
-
-.mapa .mapa__1 > figure > img {
-    width: 100%;
-    margin: 5px;
 }
 
 footer {
