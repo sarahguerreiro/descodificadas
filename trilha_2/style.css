@@ -1,3 +1,46 @@
-* {
-    padding: 10px;
+table, th, td {
+   padding: auto;
+   text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+th {
+    height: 65px;
+    width: 150px;
+    /*background-color: rgb(207, 160, 251);*/
+}
+
+.ametais{
+    background-color: rgb(81, 214, 92);
+}
+
+.alcalinos {
+    background-color: rgb(223, 171, 29);
+}
+.alcalinoterrosos {
+    background-color: rgb(244, 224, 66);
+}
+.transicao {
+    background-color: #f66c68;
+}
+.lantanideos {
+    background-color: rgb(38, 212, 231);
+}
+.actnidios {
+    background-color: rgb(219, 155, 249);
+}
+.nobres {
+    background-color: rgb(69, 124, 235);
+}
+.semimetais {
+    background-color: rgb(39, 168, 142);
+}
+.halogenios {
+    background-color: rgb(78, 196, 235);
+}
+.outrosMetais {
+    background-color: rgb(185, 251, 247);
 }
