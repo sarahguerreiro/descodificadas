@@ -1,0 +1,2 @@
+- Quando vou usar Css Grid Layout?
+Quando houver interação entre coluna e linha, por exemplo, um layout em que vc tem as colunas e em uma das colunas linhas

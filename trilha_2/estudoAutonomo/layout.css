@@ -1,0 +1,41 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap; /*com essa propriedade, quando a tela for bemm pequena e um ficar perto do outro, a parte do menu vai pra baixo do logo*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: darkblue;
+}
+
+.menu {
+ display: flex;   
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    background: tomato;
+}
+
+/* Css Flexbox*/
