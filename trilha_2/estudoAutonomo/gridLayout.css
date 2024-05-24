@@ -1,0 +1,67 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+img {
+    max-width: 100%; /*responsividade: as imagens se expandem ate o tamanho maximo delas(100%)*/
+    display: block;
+}
+
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap; /*com essa propriedade, quando a tela for bemm pequena e um ficar perto do outro, a parte do menu vai pra baixo do logo*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: darkblue;
+}
+
+.menu {
+ display: flex;   
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    background: tomato;
+}
+
+/* Css Flexbox*/
+
+.flex {
+    display: flex; /*dando essa propriedade para a section que carrega os itens, deixa os itens todos alinhados numa  mesma linha horizontal*/
+    flex-wrap: wrap; /*indico com o wrap q se as condicções de tamanho pre estabelecidas nao forem atendidas, ele pode quebrar a linha p ajustar-se a tela*/
+    max-width: 800px;
+    margin: 0 auto; /*alinha os itens ao centro ao passar dos 800px de largura*/
+}
+
+.flex > div {
+    flex: 1 1 200px; /*essas são as condições de tamanho pre estabelecidas*/
+    margin: 10px;
+}
+
+/* CSS GRID 1*/
+
+.grid1 {
+    display: grid; /*Um elemento HTML se torna um contêiner de grid quando sua propriedade display é definida como grid ou inline-grid.*/
+    grid-template-columns: repeat(3, 1fr);/*com esse atributo passamos como valor o repeat que recebe o numero de colunas que vc quer dividir aquela lista, seguido pelo 1fr q é uma unidade fracional q divide o espaco da lista pelo numero de colunas em 100% cada parte igualmente*/
+    max-width: 800px;
+    margin: 0 auto;
+}
