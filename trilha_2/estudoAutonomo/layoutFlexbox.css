@@ -15,6 +15,11 @@ h1 {
     margin-top: 100px;
 }
 
+img {
+    max-width: 100%; /*as imagens se expandem ate o tamanho maximo delas*/
+    display: block;
+}
+
 .cabecalho {
     display: flex;
     flex-wrap: wrap; /*com essa propriedade, quando a tela for bemm pequena e um ficar perto do outro, a parte do menu vai pra baixo do logo*/
@@ -39,3 +44,15 @@ h1 {
 }
 
 /* Css Flexbox*/
+
+.flex {
+    display: flex; /*dando essa propriedade para a section que carrega os itens, deixa os itens todos alinhados numa  mesma linha horizontal*/
+    flex-wrap: wrap; /*indico com o wrap q se as condicções de tamanho pre estabelecidas nao forem atendidas, ele pode quebrar a linha p ajustar-se a tela*/
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div {
+    flex: 1 1 250px;
+    margin: 10px;
+}
