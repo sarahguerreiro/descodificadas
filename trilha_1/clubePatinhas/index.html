@@ -34,12 +34,14 @@
     <header>
       <nav class="navbar">
         <a href="">
-          <img
-            src="/clubePatinhas/assets/logoPatinhas.png"
-            alt=""
-            width="50"
-            height="50"
-          />
+          <svg>
+            <filter id="grainy"> <!-- com quem vamos criar a textura -->
+              <feTurbulence 
+                type="turbulence"
+                baseFrequency="0.65"
+              />
+            </filter>
+          </svg>
         </a>
         <ul class="container">
           <li><a href="index.html">home</a></li>

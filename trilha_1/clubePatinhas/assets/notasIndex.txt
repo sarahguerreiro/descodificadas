@@ -1,0 +1,5 @@
+<img
+            src="/clubePatinhas/assets/logoPatinhas.png"
+            alt=""
+            width="50"
+            height="50"
