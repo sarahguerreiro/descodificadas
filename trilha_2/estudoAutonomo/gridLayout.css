@@ -62,6 +62,20 @@ img {
 .grid1 {
     display: grid; /*Um elemento HTML se torna um contêiner de grid quando sua propriedade display é definida como grid ou inline-grid.*/
     grid-template-columns: repeat(3, 1fr);/*com esse atributo passamos como valor o repeat que recebe o numero de colunas que vc quer dividir aquela lista, seguido pelo 1fr q é uma unidade fracional q divide o espaco da lista pelo numero de colunas em 100% cada parte igualmente*/
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 780px; /*dando um limite pro container*/
+    margin: 0 auto; /*deixa o container no centro*/
+    grid-gap: 20px; /*com o grid layout, vc tem o atributo grid gap que substitui o margin entre os itens*/
+}
+
+.grid1 > div:nth-child(n + 4) {
+    /*O nth-child busca todos os filhos do elemento trabalhado(no caso, da class grid1) e como parametro vc pode passar o numero da posição do elemento filho que quer mexer ou usar de formulas matematicas, como a usada para a partir da posição especificada, aplicar as alterações desejadas(no ex, as mudanças serão aplicadas a partir do elemento-filho 4)*/
+    display: grid; /*aqui vc tem uma recursão de grid: um elemento display grid, dentro de um elemento display grid, isso pra dar um estilo diferente a um grupo de itens-filhos de um elemento - pai que é grid */
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center; /*esse atributo vai alinhar o texto de legenda em relacao ao centro da imagem*/
+}
+
+.anuncio {
+    grid-column: 1; /*a class da img q será anuncio carrega o grid-column pra informar q esta img estara posicionada na coluna 1 do grid*/
+    grid-row: 2 / 5; /*já com o grid-row vc indica q este elemento estará posicionado na linha 2 de um total de 5 linhas*/
 }
