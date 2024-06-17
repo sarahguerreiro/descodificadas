@@ -5,6 +5,9 @@ body, ul, li, p {
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    margin-bottom: 100px;
+}
 a {
     text-decoration: none;
     color: antiquewhite;
@@ -62,7 +65,8 @@ img {
 .grid1 {
     display: grid; /*Um elemento HTML se torna um contêiner de grid quando sua propriedade display é definida como grid ou inline-grid.*/
     grid-template-columns: repeat(3, 1fr);/*com esse atributo passamos como valor o repeat que recebe o numero de colunas que vc quer dividir aquela lista, seguido pelo 1fr q é uma unidade fracional q divide o espaco da lista pelo numero de colunas em 100% cada parte igualmente*/
-    max-width: 780px; /*dando um limite pro container*/
+    max-width: 800px; /*dando um limite pro container*/
+    padding: 10px;
     margin: 0 auto; /*deixa o container no centro*/
     grid-gap: 20px; /*com o grid layout, vc tem o atributo grid gap que substitui o margin entre os itens*/
 }
@@ -75,7 +79,87 @@ img {
     align-items: center; /*esse atributo vai alinhar o texto de legenda em relacao ao centro da imagem*/
 }
 
-.anuncio {
+.grid1 > div.anuncio {
     grid-column: 1; /*a class da img q será anuncio carrega o grid-column pra informar q esta img estara posicionada na coluna 1 do grid*/
     grid-row: 2 / 5; /*já com o grid-row vc indica q este elemento estará posicionado na linha 2 de um total de 5 linhas*/
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .grid1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid1 > div:nth-child(n + 4) {
+        display: block;
+    }
+    .grid1 > div.anuncio {
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+}
+
+/* CSS GRID 2 */
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.sidebar > div {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        display: flex;
+        overflow: scroll;
+    }
+    .sidebar > div {
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
+}
+
+/* SECTION GRID 3*/
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    min-width: 800px;
+    padding: 10px;
+}
+
+.grid3-item {
+    /*display: grid;*/
+
+}
+
+.grid3-item:nth-child(1) {
+    grid-row: 1/3;
+}
+
+
+.grid3-item img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+}
+
+.grid3-item p {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: antiquewhite;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
 }
